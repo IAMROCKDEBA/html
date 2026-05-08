@@ -95,6 +95,79 @@ body{
   padding-left:14px;position:relative;font-weight:300}
 .pb li::before{content:'▸';position:absolute;left:0;color:var(--gold);font-size:0.68rem;top:3px}
 .pb li strong{font-weight:600;color:var(--ink)}
+
+@page{size:A4;margin:0}
+@media print{
+  :root{
+    --navy:#07162A;--ink:#111827;--blue:#0646D6;--blue-lt:#2463EB;
+    --gold:#9F6B00;--gold-lt:#C38A13;--g1:#F1F4F9;--g2:#D7DFEA;
+    --g3:#465366;--g4:#263244;--body:#151D2E;--tag-bg:#E9EFFF;
+    --tag-fg:#0646D6;
+  }
+  *,*::before,*::after{
+    -webkit-print-color-adjust:exact!important;
+    print-color-adjust:exact!important;
+  }
+  html{font-size:13px;background:#fff}
+  body{background:#fff;padding:0;margin:0;min-height:297mm}
+  .page{
+    width:210mm;min-height:297mm;box-shadow:none;border-radius:0;
+    overflow:hidden;
+  }
+  .hdr{padding:28px 36px 24px;background:var(--navy)!important}
+  .hdr::before{
+    top:-64px;right:-54px;width:245px;height:245px;border-width:34px;
+    border-color:rgba(36,99,235,0.34);
+  }
+  .hdr::after{
+    bottom:-68px;left:160px;width:155px;height:155px;border-width:22px;
+    border-color:rgba(195,138,19,0.24);
+  }
+  .hdr-left h1{font-size:3.35rem;letter-spacing:0.045em}
+  .hdr-left h1 span{color:#E1A626}
+  .role{font-size:0.68rem;color:rgba(255,255,255,0.82);letter-spacing:0.15em}
+  .hdr-right{gap:4px}
+  .ci,.ci a{font-size:0.7rem;color:rgba(255,255,255,0.9)}
+  .ci svg{width:11px;height:11px;opacity:0.8}
+  .main{grid-template-columns:196px 1fr}
+  .sb{padding:26px 17px;background:var(--g1)!important}
+  .sbs{margin-bottom:20px}
+  .sbt,.sec-t{font-size:0.58rem;color:var(--blue);letter-spacing:0.19em}
+  .sbt{margin-bottom:10px;padding-bottom:5px}
+  .sg{margin-bottom:9px}
+  .sl{font-size:0.76rem;margin-bottom:4px}
+  .tags{gap:3px}
+  .tag{font-size:0.6rem;padding:2px 5px;background:var(--tag-bg)!important}
+  .cert{font-size:0.72rem;line-height:1.4;margin-bottom:7px;color:var(--g4)}
+  .cert strong{font-size:0.74rem}
+  .li{gap:5px;margin-bottom:7px}
+  .li-lbl{font-size:0.66rem;min-width:45px}
+  .li a{font-size:0.57rem}
+  .pill{font-size:0.62rem;padding:2px 6px;border-radius:12px}
+  .cnt{padding:26px 30px}
+  .sec{margin-bottom:18px}
+  .sec-h{margin-bottom:10px}
+  .sum{font-size:0.94rem;line-height:1.5;color:var(--body);font-weight:400}
+  .edu-row{grid-template-columns:74px 1fr;gap:10px}
+  .edu-yr{font-size:0.68rem;color:var(--g3)}
+  .edu-deg{font-size:0.92rem}
+  .edu-inst{font-size:0.78rem;color:var(--g4)}
+  .edu-c{font-size:0.68rem;line-height:1.35;color:var(--g3)}
+  .pc{padding:11px 14px;margin-bottom:9px;border-color:var(--g2)}
+  .pn{font-size:0.96rem}
+  .pl{font-size:0.55rem;padding:2px 6px;background:var(--tag-bg)!important}
+  .pt{margin-bottom:5px}
+  .ptags{gap:3px;margin-bottom:6px}
+  .ptag{
+    font-size:0.54rem;padding:1px 5px;background:var(--g1)!important;
+    color:var(--g4);border-color:var(--g2);
+  }
+  .pb li{
+    font-size:0.86rem;line-height:1.45;margin-bottom:3px;
+    color:var(--body);font-weight:400;padding-left:12px;
+  }
+  .pb li::before{top:2px;color:var(--gold)}
+}
 </style>
 </head>
 <body>
@@ -122,7 +195,7 @@ body{
       </div>
       <div class="ci">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-        <a href="https://debarshisau.vercel.app">debarshisau.vercel.app</a>
+        <a href="https://debarshisau.in">debarshisau.in</a>
       </div>
       <div class="ci">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
@@ -200,7 +273,7 @@ body{
       <div class="sbt">Links</div>
       <div class="li">
         <span class="li-lbl">Portfolio</span>
-        <a href="https://debarshisau.vercel.app">debarshisau.vercel.app</a>
+        <a href="https://debarshisau.in">debarshisau.in</a>
       </div>
       <div class="li">
         <span class="li-lbl">GitHub</span>
